@@ -28,7 +28,7 @@ The pipeline follows these steps:
 ![ERD Diagram](images/Uber_ERD_Diagram.png)
 
 ## 🗄️ BigQuery Data Warehouse
-![BigQuery Tables](images/BigQuery_Tables.png)
+![BigQuery Tables](images/BigQueryTables.png)
 
 🔗 [View SQL Script](bigquery/uber_analytics.sql)
 
