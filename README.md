@@ -30,7 +30,7 @@ The pipeline follows these steps:
 ## 🗄️ BigQuery Data Warehouse
 ![BigQuery Tables](images/BigQueryTables.png)
 
-🔗 [View SQL Script](bigquery/uber_analytics.sql)
+🔗 [View SQL Script](BigQuery/uber_analytics.sql)
 
 ## 🔄 Mage AI Pipeline
 ![Mage Pipeline](images/Mage_Pipeline.png)
