@@ -2,6 +2,8 @@ from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.bigquery import BigQuery
 from mage_ai.io.config import ConfigFileLoader
 from pandas import DataFrame
+from google.cloud import bigquery
+from google.auth import default
 from os import path
 
 if 'data_exporter' not in globals():
@@ -9,8 +11,8 @@ if 'data_exporter' not in globals():
 
 @data_exporter
 def export_data_to_big_query(data, **kwargs) -> None:
-    config_path = path.join(get_repo_path(), 'io_config.yaml')
-    config_profile = 'default'
+    credentials, project = default()
+    client = bigquery.Client(credentials=credentials, project='project-9e8fe6e9-80e0-472b-b51')
 
     tables = {
         'fact_table': data['fact_table'],
@@ -24,10 +26,10 @@ def export_data_to_big_query(data, **kwargs) -> None:
     }
 
     for table_name, df in tables.items():
-        table_id = f'project-9e8fe6e9-80e0-472b-b51.uber.{table_name}'
-        BigQuery.with_config(ConfigFileLoader(config_path, config_profile)).export(
-            DataFrame(df),
-            table_id,
+        DataFrame(df).to_gbq(
+            destination_table=f'uber.{table_name}',
+            project_id='project-9e8fe6e9-80e0-472b-b51',
             if_exists='replace',
+            credentials=credentials,
         )
         print(f'Exported {table_name} successfully')
