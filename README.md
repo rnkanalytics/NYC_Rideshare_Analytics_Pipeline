@@ -7,7 +7,7 @@ Data engineering project: ETL pipeline built with Python, Mage AI, Google Cloud 
 ![ERD Diagram]([[images/Uber_ERD_Diagram.pdf](https://github.com/rnkanalytics-prog/Uber_Trip_Analytics/blob/main/images/Uber_ERD_Diagram.pdf)])
 
 ## Dashboard
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Uber_Trip_Analytics_Dashboard.png)
 
 ## Tech Stack
 - Python
