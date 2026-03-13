@@ -12,7 +12,7 @@ def load_data_from_api(*args, **kwargs):
     """
     Template for loading data from API
     """
-    url = 'https://storage.googleapis.com/uber_data_engineering_personal_project/uber_data.csv'
+    url = 'https://storage.googleapis.com/YOUR-GCS-BUCKET-URL'
     response = requests.get(url)
 
     return pd.read_csv(io.StringIO(response.text), sep=',')
