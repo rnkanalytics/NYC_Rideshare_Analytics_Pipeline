@@ -1,4 +1,4 @@
-# 🚕 Uber Trip Analytics
+# 🚕 Uber Trip Analytics - Data Engineering Project
 
 ## Project Overview
 This end-to-end data engineering project analyzes 100,000+ NYC Uber trips to uncover insights on pickup hotspots, fare patterns, payment trends, and passenger behavior. Raw trip data was extracted from Google Cloud Storage, transformed into a star schema data warehouse using Mage AI, loaded into BigQuery, and visualized in an interactive Looker Studio dashboard.
