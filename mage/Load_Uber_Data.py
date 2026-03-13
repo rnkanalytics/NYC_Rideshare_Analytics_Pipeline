@@ -12,7 +12,7 @@ if 'data_exporter' not in globals():
 @data_exporter
 def export_data_to_big_query(data, **kwargs) -> None:
     credentials, project = default()
-    client = bigquery.Client(credentials=credentials, project='project-9e8fe6e9-80e0-472b-b51')
+    client = bigquery.Client(credentials=credentials, project='YOUR-PROFILE-ID')
 
     tables = {
         'fact_table': data['fact_table'],
@@ -28,7 +28,7 @@ def export_data_to_big_query(data, **kwargs) -> None:
     for table_name, df in tables.items():
         DataFrame(df).to_gbq(
             destination_table=f'uber.{table_name}',
-            project_id='project-9e8fe6e9-80e0-472b-b51',
+            project_id='YOUR-PROFILE-ID',
             if_exists='replace',
             credentials=credentials,
         )
