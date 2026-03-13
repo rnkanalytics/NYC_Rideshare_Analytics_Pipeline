@@ -4,7 +4,7 @@
 Data engineering project: ETL pipeline built with Python, Mage AI, Google Cloud Storage, BigQuery, and Looker Studio to analyze Uber trip data in NYC
 
 ## Data Model
-![ERD Diagram]([images/Uber_ERD_Diagram.pdf))
+![ERD Diagram]([images/Uber_ERD_Diagram.pdf])
 
 ## Dashboard
 ![Dashboard](images/dashboard.png)
