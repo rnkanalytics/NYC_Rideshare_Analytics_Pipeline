@@ -75,4 +75,4 @@ The dataset contains NYC Uber trip records including:
 - Rate code
 
 ## 🙏 Acknowledgements
-This project was inspired by and built following the tutorial by [Darshil Parmar](https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project).
+Inspired by a tutorial by [Darshil Parmar](https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project).
