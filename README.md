@@ -52,19 +52,19 @@ Uber_Trip_Analytics/
 ├── README.md
 ├── images/
 │   ├── Uber_ERD_Diagram.png
-│   ├── BigQuery_Tables.png
+│   ├── BigQueryTables.png
 │   ├── Mage_Pipeline.png
 │   └── Uber_Trip_Analytics_Dashboard.png
 ├── mage/
 │   ├── Extract_Uber_Data.py
 │   ├── Transform_Uber_Data.py
 │   └── Load_Uber_Data.py
-└── bigquery/
+└── BigQuery/
     └── uber_analytics.sql
 ```
 
 ## 📦 Dataset
-🔗 [Original Dataset](https://storage.googleapis.com/uber_data_engineering_personal_project/uber_data.csv)
+🔗 [Source Dataset](https://storage.googleapis.com/uber_data_engineering_personal_project/uber_data.csv)
 The dataset contains NYC Uber trip records including:
 - Pickup and dropoff datetime
 - Pickup and dropoff coordinates
