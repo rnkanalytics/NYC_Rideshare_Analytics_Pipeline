@@ -64,6 +64,7 @@ Uber_Trip_Analytics/
 ```
 
 ## 📦 Dataset
+🔗 [Original Dataset](https://storage.googleapis.com/uber_data_engineering_personal_project/uber_data.csv)
 The dataset contains NYC Uber trip records including:
 - Pickup and dropoff datetime
 - Pickup and dropoff coordinates
@@ -72,3 +73,6 @@ The dataset contains NYC Uber trip records including:
 - Fare amount, tip, tolls
 - Payment type
 - Rate code
+
+## 🙏 Acknowledgements
+This project was inspired by and built following the tutorial by [Darshil Parmar](https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project).
