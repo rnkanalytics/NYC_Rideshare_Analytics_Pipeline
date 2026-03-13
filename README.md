@@ -27,15 +27,15 @@ The pipeline follows these steps:
 ## 📐 Data Model
 ![ERD Diagram](images/Uber_ERD_Diagram.png)
 
-## 🗄️ BigQuery Data Warehouse
-![BigQuery Tables](images/BigQueryTables.png)
-
-🔗 [View SQL Script](BigQuery/uber_analytics.sql)
-
 ## 🔄 Mage AI Pipeline
 ![Mage Pipeline](images/Mage_Pipeline.png)
 
 🔗 [View Mage AI Pipeline Code](mage/)
+
+## 🗄️ BigQuery Data Warehouse
+![BigQuery Tables](images/BigQueryTables.png)
+
+🔗 [View SQL Script](BigQuery/uber_analytics.sql)
 
 ## 🛠️ Tech Stack
 | Tool | Purpose | Link |
