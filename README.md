@@ -1,17 +1,22 @@
-# Uber Trip Analytics
+# 🚕 Uber Trip Analytics
 
 ## Project Overview
-Data engineering project: ETL pipeline built with Python, Mage AI, Google Cloud Storage, BigQuery, and Looker Studio to analyze 100,000+ Uber trips in NYC. The project transforms raw trip data into a star schema data warehouse and visualizes key insights through an interactive dashboard. This was my first time using maze and I must say the tool is very sleek and easy to use.
+This end-to-end data engineering project analyzes 100,000+ NYC Uber trips to uncover insights on pickup hotspots, fare patterns, payment trends, and passenger behavior. Raw trip data was extracted from Google Cloud Storage, transformed into a star schema data warehouse using Mage AI, loaded into BigQuery, and visualized in an interactive Looker Studio dashboard.
 
-## Dashboard
-🔗 [View Live Dashboard](https://lookerstudio.google.com/reporting/9fb56b9d-87f2-4fa7-a47e-5999c5619920)
+## 🔗 Live Dashboard
+[View Live Dashboard](https://lookerstudio.google.com/reporting/9fb56b9d-87f2-4fa7-a47e-5999c5619920)
 
 ![Dashboard](images/Uber_Trip_Analytics_Dashboard.png)
 
-## Data Model
-![ERD Diagram](images/Uber_ERD_Diagram.png)
+## 📊 Key Insights
+- **100K+** Uber trips analyzed
+- **66.5%** of payments made by Credit Card
+- **$13.25** average fare per trip
+- **3.0 miles** average trip distance
+- **Manhattan** is the busiest pickup location
+- **$0.40** average toll charged per trip
 
-## Architecture
+## 🏗️ Architecture
 The pipeline follows these steps:
 1. Raw Uber trip data stored in **Google Cloud Storage**
 2. **Mage AI** orchestrates the ETL pipeline
@@ -19,19 +24,36 @@ The pipeline follows these steps:
 4. Loaded into **BigQuery** for analysis
 5. Visualized in **Looker Studio**
 
-## Tech Stack
-- **Python** — data transformation and pipeline logic
-- **Mage AI** — ETL pipeline orchestration
-- **Google Cloud Storage** — raw data lake
-- **BigQuery** — data warehouse
-- **Looker Studio** — data visualization
+## 📐 Data Model
+![ERD Diagram](images/Uber_ERD_Diagram.png)
 
-## Project Structure
+## 🗄️ BigQuery Data Warehouse
+![BigQuery Tables](images/BigQuery_Tables.png)
+
+🔗 [View SQL Script](bigquery/uber_analytics.sql)
+
+## 🔄 Mage AI Pipeline
+![Mage Pipeline](images/Mage_Pipeline.png)
+
+🔗 [View Mage AI Pipeline Code](mage/)
+
+## 🛠️ Tech Stack
+| Tool | Purpose | Link |
+|------|---------|------|
+| Python | Data transformation and pipeline logic | [Code](mage/) |
+| Mage AI | ETL pipeline orchestration | [mage.ai](https://www.mage.ai) |
+| Google Cloud Storage | Raw data lake | [GCS](https://cloud.google.com/storage) |
+| BigQuery | Data warehouse | [BigQuery](https://cloud.google.com/bigquery) |
+| Looker Studio | Data visualization | [Dashboard](https://lookerstudio.google.com/reporting/9fb56b9d-87f2-4fa7-a47e-5999c5619920) |
+
+## 📁 Project Structure
 ```
 Uber_Trip_Analytics/
 ├── README.md
 ├── images/
 │   ├── Uber_ERD_Diagram.png
+│   ├── BigQuery_Tables.png
+│   ├── Mage_Pipeline.png
 │   └── Uber_Trip_Analytics_Dashboard.png
 ├── mage/
 │   ├── Extract_Uber_Data.py
@@ -41,14 +63,7 @@ Uber_Trip_Analytics/
     └── uber_analytics.sql
 ```
 
-## Key Insights
-- **100K+** Uber trips analyzed
-- **66.5%** of payments made by Credit Card
-- **Average fare** of $13.25 per trip
-- **Average trip distance** of 3.0 miles
-- **Manhattan** is the busiest pickup location
-
-## Dataset
+## 📦 Dataset
 The dataset contains NYC Uber trip records including:
 - Pickup and dropoff datetime
 - Pickup and dropoff coordinates
@@ -58,6 +73,20 @@ The dataset contains NYC Uber trip records including:
 - Payment type
 - Rate code
 
-## Contact
+## 🚀 How to Run
+1. Clone this repository
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Upload raw data to Google Cloud Storage
+4. Start Mage AI:
+```bash
+mage start uber
+```
+5. Run the pipeline in Mage UI at `http://localhost:6789`
+6. Query results in BigQuery using `bigquery/uber_analytics.sql`
+
+## 📬 Contact
 - 🔗 [LinkedIn](https://www.linkedin.com/in/ramiz-khatib/)
 - 🐙 [GitHub](https://github.com/rnkanalytics-prog)
