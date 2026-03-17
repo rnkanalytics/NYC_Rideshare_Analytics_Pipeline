@@ -48,7 +48,7 @@ As an extension to the original project, all transformed tables were loaded into
 
 ## 📐 Data Model
 
-![ERD Diagram](images/NYC_Rideshare_ERD_Diagram.png)
+![ERD Diagram](images/Uber_ERD_Diagram.png)
 
 ## 🔄 Mage AI Pipeline
 
