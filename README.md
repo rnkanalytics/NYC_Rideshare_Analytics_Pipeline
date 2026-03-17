@@ -1,4 +1,4 @@
-# 🚕 NYC Trip Analytics - Data Engineering Project
+# 🚕 NYC Rideshare Analytics - Data Engineering Project
 
 ## Project Overview
 
