@@ -8,7 +8,7 @@ This end-to-end data engineering project analyzes 100,000+ NYC rideshare trips t
 
 [View Live Dashboard](https://lookerstudio.google.com/reporting/9fb56b9d-87f2-4fa7-a47e-5999c5619920)
 
-![Dashboard](images/NYC_Uber_Analytics_Dashboard.png)
+![Dashboard](images/NYC_Uber_Trip_Analytics_Dashboard.png)
 
 ## 📊 Key Insights
 
