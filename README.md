@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This end-to-end data engineering project analyzes 100,000+ NYC Uber trips to uncover insights on pickup hotspots, fare patterns, payment trends, and passenger behavior. Raw trip data was extracted from Google Cloud Storage, transformed into a star schema data warehouse using Mage AI, loaded into both **BigQuery** and **Snowflake**, and visualized in an interactive Looker Studio dashboard.
+This end-to-end data engineering project analyzes 100,000+ NYC Uber trips to uncover insights on pickup hotspots, fare patterns, payment trends, and passenger behavior. A sample population was extracted from the NYC TLC Trip Record Data, converted from Parquet to CSV, and stored in Google Cloud Storage. Data was transformed into a star schema data warehouse using Mage AI, loaded into both **BigQuery** and **Snowflake**, and visualized in an interactive Looker Studio dashboard.
 
 ## 🔗 Live Dashboard
 
@@ -23,7 +23,7 @@ This end-to-end data engineering project analyzes 100,000+ NYC Uber trips to unc
 
 The pipeline follows these steps:
 
-1. Raw Uber trip data stored in **Google Cloud Storage**
+1. NYC TLC trip data sampled, converted from Parquet to CSV, and stored in **Google Cloud Storage**
 2. **Mage AI** orchestrates the ETL pipeline
 3. Data transformed into a **star schema** with fact and dimension tables
 4. Loaded into **BigQuery** and **Snowflake** in parallel
@@ -97,10 +97,11 @@ Uber_Trip_Analytics/
 
 ## 📦 Dataset
 
-🔗 [Source Dataset](https://storage.googleapis.com/uber_data_engineering_personal_project/uber_data.csv)
+🔗 [Source Dataset](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
-The dataset contains NYC Uber trip records including:
+Data sourced from the **NYC Taxi & Limousine Commission (TLC) Trip Record Data** — one of the largest publicly available transportation datasets. A sample population was selected, converted from Parquet to CSV format, and uploaded to Google Cloud Storage as the raw data layer.
 
+The dataset contains NYC trip records including:
 - Pickup and dropoff datetime
 - Pickup and dropoff coordinates
 - Passenger count
